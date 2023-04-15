@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.18;
 
-contract MiPrimerContrato {
+contract MsgSender {
     address caller;
 
     function setCaller() public returns (address) {

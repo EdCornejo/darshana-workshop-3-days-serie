@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
-contract MiPrimerContrato {
+contract MiPrimerContratoWorkshop {
     // STORAGE
     // definir variables
     // uint256 => integer (entero)
