@@ -36,8 +36,8 @@ contract Mapping {
 
     // definir un setter (crea un metodo para guardar informacion en la tabla)
     function guardaSaludoPorNombre(
-        string memory nombre,
-        string memory saludo
+        string memory _nombre,
+        string memory _saludo
     ) public {
         // Mecanismo de proteccion
         // Quiero que solo mi address pueda usar este metodo
@@ -46,9 +46,9 @@ contract Mapping {
         }
 
         // Al emitir un evento se guarda informacion en el Blokchcain
-        emit SaludoGuardado(nombre, saludo);
+        emit SaludoGuardado(_nombre, _saludo);
 
-        listaDeSaludosPorNombre[nombre] = saludo;
+        listaDeSaludosPorNombre[_nombre] = saludo;
     }
 
     // definir un getter (crea un metodo para leer informacion de la tabla)
